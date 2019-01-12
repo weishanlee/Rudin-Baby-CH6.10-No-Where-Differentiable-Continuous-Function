@@ -50,7 +50,6 @@ def phi(x):
 infinity = 1000  #000
 def fn(x):
     sum_ =0.0
-    #xlong = get_decimal(x,base,exponent)
     for n in range(infinity):
         if n == 0:
             temp = phi(x)
@@ -87,7 +86,6 @@ yValues = np.append(yValues,yValues_reverse)
 
 xyValues = open("C:/Users/Wei-shan/.spyder-py3/NoWhereDiffContiFunction" + \
                 "/xyValues.dat",'w')
-#C:\Users\Wei-shan\.spyder-py3\NoWhereDiffContiFunction
 
 for ii in range( len(xValues) ):
     xyValues.write( "%g\t%g\n" % ( xValues[ii],yValues[ii] ) )
